@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG">
+        <methods>
+          <include name="LogOutFromApp"/>
+          <include name="ClosedBrowser"/>
+          <include name="LoginToApp"/>
+          <include name="VerifyFullName"/>
+          <include name="OpenBrwoser"/>
+        </methods>
+      </class> <!-- POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
