@@ -10,7 +10,7 @@ public class Exa11_parellel_Execution2
 public void openFacebookApp() throws InterruptedException
 {
 	WebDriver driver=new ChromeDriver();
-	driver.manage().window().maximize();
+	//driver.manage().window().maximize();
 	driver.get("https://www.facebook.com/");
 	Thread.sleep(4000);
 	driver.close();

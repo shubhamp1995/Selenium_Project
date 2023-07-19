@@ -36,6 +36,11 @@ Reporter.log("running tc2",true);
 	{
 	Reporter.log("---postCond--",true);	
 	}
+	@AfterMethod
+	public void PostConditionwwwww()
+	{
+	Reporter.log("---postCond22--",true);	
+	}
 	@AfterClass
 	public void LastExe()
 	{

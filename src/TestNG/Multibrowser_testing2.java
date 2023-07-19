@@ -28,7 +28,7 @@ public void Tc1(String browserName) throws InterruptedException
 	{
 		driver=new EdgeDriver();
 	}
-	driver.get("https://www.facebook.com/");
+	driver.get("https://www.google.com/");
 	driver.manage().window().maximize();
 	Thread.sleep(3000);
 	driver.quit();

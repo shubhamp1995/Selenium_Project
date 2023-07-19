@@ -13,16 +13,6 @@
       <class name="TestNG.Multibrowsertesting3"/>
     </classes>
   </test> <!-- Test -->
-   <test name="Test3">
-   <parameter name="Browsername" value="Firefox"/>
-    <classes>
-      <class name="TestNG.Multibrowsertesting3"/>
-    </classes>
-  </test> <!-- Test -->
-   <test name="Test4">
-   <parameter name="Browsername" value="Safari"/>
-    <classes>
-      <class name="TestNG.Multibrowsertesting3"/>
-    </classes>
-  </test> <!-- Test -->
+   
+   
 </suite> <!-- Suite -->

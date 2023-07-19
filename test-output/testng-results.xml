@@ -1,41 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-21T03:33:52 PDT" name="Default suite" finished-at="2023-06-21T03:34:28 PDT" duration-ms="35962">
+  <suite started-at="2023-07-05T10:16:22 PDT" name="MultibrowserTesting" finished-at="2023-07-05T10:17:04 PDT" duration-ms="42123">
     <groups>
     </groups>
-    <test started-at="2023-06-21T03:33:52 PDT" name="Default test" finished-at="2023-06-21T03:34:28 PDT" duration-ms="35962">
-      <class name="POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG">
-        <test-method is-config="true" signature="OpenBrwoser()[pri:0, instance:POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG@5fbdfdcf]" started-at="2023-06-21T03:33:52 PDT" name="OpenBrwoser" finished-at="2023-06-21T03:34:14 PDT" duration-ms="22481" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrwoser -->
-        <test-method is-config="true" signature="LoginToApp()[pri:0, instance:POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG@5fbdfdcf]" started-at="2023-06-21T03:34:14 PDT" name="LoginToApp" finished-at="2023-06-21T03:34:20 PDT" duration-ms="5823" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginToApp -->
-        <test-method signature="VerifyFullName()[pri:0, instance:POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG@5fbdfdcf]" started-at="2023-06-21T03:34:20 PDT" name="VerifyFullName" finished-at="2023-06-21T03:34:20 PDT" duration-ms="15" status="FAIL">
-          <exception class="java.lang.Error">
+    <test started-at="2023-07-05T10:16:22 PDT" name="Test3" finished-at="2023-07-05T10:16:22 PDT" duration-ms="112">
+      <class name="TestNG.Multibrowser_testing2">
+        <test-method signature="Tc1(java.lang.String)[pri:0, instance:TestNG.Multibrowser_testing2@48f278eb]" started-at="2023-07-05T10:16:22 PDT" name="Tc1" finished-at="2023-07-05T10:16:22 PDT" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Unresolved compilation problem: 
-Syntax error, insert ";" to complete Statement
-]]>
+              <![CDATA[
+Parameter 'browserName' is required by @Test on method Tc1 but has not been marked @Optional or defined
+in C:\Users\shubham\eclipse-workspace\selenium_proj\multibrowserTestingpart2.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problem: 
-Syntax error, insert ";" to complete Statement
-
-at POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG.VerifyFullName(Test_POM_DDF_TestNG.java:64)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by @Test on method Tc1 but has not been marked @Optional or defined
+in C:\Users\shubham\eclipse-workspace\selenium_proj\multibrowserTestingpart2.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -43,40 +33,50 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyFullName -->
-        <test-method is-config="true" signature="LogOutFromApp(org.testng.ITestResult)[pri:0, instance:POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG@5fbdfdcf]" started-at="2023-06-21T03:34:20 PDT" name="LogOutFromApp" finished-at="2023-06-21T03:34:22 PDT" duration-ms="2001" status="PASS">
+        </test-method> <!-- Tc1 -->
+      </class> <!-- TestNG.Multibrowser_testing2 -->
+    </test> <!-- Test3 -->
+    <test started-at="2023-07-05T10:16:22 PDT" name="Test1" finished-at="2023-07-05T10:16:52 PDT" duration-ms="30302">
+      <class name="TestNG.Multibrowsertesting3">
+        <test-method signature="browserTesting(java.lang.String)[pri:0, instance:TestNG.Multibrowsertesting3@66498326]" started-at="2023-07-05T10:16:22 PDT" name="browserTesting" finished-at="2023-07-05T10:16:52 PDT" duration-ms="30183" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyFullName status=FAILURE method=Test_POM_DDF_TestNG.VerifyFullName()[pri:0, instance:POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG@5fbdfdcf] output={null}]]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LogOutFromApp -->
-        <test-method is-config="true" signature="ClosedBrowser()[pri:0, instance:POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG@5fbdfdcf]" started-at="2023-06-21T03:34:22 PDT" name="ClosedBrowser" finished-at="2023-06-21T03:34:28 PDT" duration-ms="5560" status="PASS">
+        </test-method> <!-- browserTesting -->
+      </class> <!-- TestNG.Multibrowsertesting3 -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-07-05T10:16:22 PDT" name="Test2" finished-at="2023-07-05T10:17:04 PDT" duration-ms="42123">
+      <class name="TestNG.Multibrowsertesting3">
+        <test-method signature="browserTesting(java.lang.String)[pri:0, instance:TestNG.Multibrowsertesting3@47987356]" started-at="2023-07-05T10:16:22 PDT" name="browserTesting" finished-at="2023-07-05T10:17:04 PDT" duration-ms="42002" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClosedBrowser -->
-      </class> <!-- POM_DDF_TestNg_Base_Utility_PF.Test_POM_DDF_TestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- browserTesting -->
+      </class> <!-- TestNG.Multibrowsertesting3 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- MultibrowserTesting -->
 </testng-results>
